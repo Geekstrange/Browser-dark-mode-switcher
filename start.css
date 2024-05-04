@@ -1,0 +1,95 @@
+html, body {
+    background: transparent;
+	margin: 0;
+    padding: 0;
+	position: relative;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #0B072A;
+	border-radius: 20px;
+	z-index: -1;
+}
+
+.color-btn {
+	padding: 20px;
+	width: 300px;
+	outline: none;
+	border: none;
+	border-radius: 2px;
+}
+
+.color-btn>p{
+	width: 300px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #f5f5f7;
+	text-shadow: 1px 1px 3px #999;
+}
+
+.module{
+	width: 300px;
+    height: 60px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-around;
+	transition: 0.7s;
+	margin: 15px 0;
+}
+
+.module:hover{
+	background-color: rgba(75, 0, 130, 0.6);
+	transition: 0.7s;
+}
+
+.module p,.module span{
+	font-size: 18px;
+	color: #C0C0C0;
+	font-weight: bold;
+	transition: 0.7s;
+}
+
+.module:hover p,.module:hover span{
+	transition: 0.7s;
+	color: #ffffff;
+}
+
+.module-top{
+	cursor: pointer;
+}
+
+.module-bottom p:nth-child(1){
+	padding: 0px 10px;
+	transition: 0.7s;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.module-bottom p:nth-child(1):hover{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #f5f5f7;
+	transition: 0.7s;
+}
+
+.position{
+	margin-top: 16.5px;
+}
+
+.position input{
+	width: 30px;
+	height: 20px;
+	transform: translateY(-2px);
+	border:0px;
+}
+
+.color-btn.current {
+  box-shadow: 0 0 0 2px white,
+              0 0 0 4px black;
+}
